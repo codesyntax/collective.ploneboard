@@ -25,16 +25,17 @@
       <h3>
         <a href=""
            tal:attributes="href topic/url"
-           tal:content="topic/title">
+           tal:content="topic/title"
+           i18n:translate="">
            Topic
         </a>
       </h3>
       <table style="width: 100%;" class="listing nosort">
         <thead>
           <tr>
-            <th>Gespräch</th>
+            <th i18n:translate="">Conversation</th>
             <!--<th class="replies">Antworten</th>-->
-            <th class="latest_reply">Neuester Kommentar</th>
+            <th class="latest_reply" i18n:translate="">Latest comment</th>
           </tr>
         </thead>
         <tbody>
@@ -43,7 +44,8 @@
               <td class="forumTitleCell">
                 <a class="listingForum" href=""
                    tal:content="conversation/title"
-                   tal:attributes="href conversation/url">
+                   tal:attributes="href conversation/url"
+                   i18n:translate="">
                   Topic
                 </a>
               </td>
@@ -58,7 +60,7 @@
                   )
                 </tal:block>
                 <tal:block tal:condition="not:conversation/last_commenter">
-                  <span class="discreet">Noch keine Gespräche.</span>
+                  <span class="discreet" i18n:translate="">No talks yet.</span>
                 </tal:block>
               </td>
             </tr>

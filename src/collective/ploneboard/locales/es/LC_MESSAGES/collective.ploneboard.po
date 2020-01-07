@@ -1,10 +1,7 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-01-03 09:08+0000\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,11 +12,7 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.ploneboard\n"
-
-#: ../browser/commentextender.py:23
-msgid ""
-msgstr ""
+"Domain: DOMAIN\n"
 
 #: ../browser/commentextender.py:23
 msgid "Attachment"
@@ -29,7 +22,7 @@ msgstr ""
 #: ../browser/topic.pt:27
 #: ../profiles/default/types/Conversation.xml
 msgid "Conversation"
-msgstr ""
+msgstr "Conversación"
 
 #: ../configure.zcml:29
 msgid "Installs the collective.ploneboard package"
@@ -38,7 +31,7 @@ msgstr ""
 #: ../browser/messageboard.pt:38
 #: ../browser/topic.pt:29
 msgid "Latest comment"
-msgstr ""
+msgstr "Último comentario"
 
 #: ../profiles/default/types/Message_Board.xml
 msgid "Message Board"
@@ -47,7 +40,7 @@ msgstr ""
 #: ../browser/messageboard.pt:63
 #: ../browser/topic.pt:54
 msgid "No talks yet."
-msgstr ""
+msgstr "No hay comentarios."
 
 #: ../configure.zcml:29
 msgid "Plone Board"
@@ -59,11 +52,11 @@ msgstr ""
 
 #: ../interfaces.py:28
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #: ../profiles/default/types/Topic.xml
 msgid "Topic"
-msgstr ""
+msgstr "Tema"
 
 #: ../configure.zcml:38
 msgid "Uninstalls the collective.ploneboard add-on."

@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ../browser/commentextender.py:23
+msgid "Attachment"
+msgstr ""
+
+#: ../browser/messageboard.pt:36
+#: ../browser/topic.pt:27
+#: ../profiles/default/types/Conversation.xml
+msgid "Conversation"
+msgstr ""
+
+#: ../configure.zcml:29
+msgid "Installs the collective.ploneboard package"
+msgstr ""
+
+#: ../browser/messageboard.pt:38
+#: ../browser/topic.pt:29
+msgid "Latest comment"
+msgstr ""
+
+#: ../profiles/default/types/Message_Board.xml
+msgid "Message Board"
+msgstr ""
+
+#: ../browser/messageboard.pt:63
+#: ../browser/topic.pt:54
+msgid "No talks yet."
+msgstr ""
+
+#: ../configure.zcml:29
+msgid "Plone Board"
+msgstr ""
+
+#: ../configure.zcml:38
+msgid "Plone Board (uninstall)"
+msgstr ""
+
+#: ../interfaces.py:28
+msgid "Text"
+msgstr ""
+
+#: ../profiles/default/types/Topic.xml
+msgid "Topic"
+msgstr ""
+
+#: ../configure.zcml:38
+msgid "Uninstalls the collective.ploneboard add-on."
+msgstr ""
