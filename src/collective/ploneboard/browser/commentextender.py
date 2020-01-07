@@ -1,4 +1,3 @@
-
 from plone.namedfile.field import NamedBlobFile
 from persistent import Persistent
 
@@ -7,7 +6,7 @@ from z3c.form.field import Fields
 from zope import interface
 
 from zope.annotation import factory
-from zope.component import adapts
+from zope.component import adapter
 from zope.interface import Interface
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
@@ -21,23 +20,21 @@ from collective.ploneboard import _
 
 class ICommentExtenderFields(Interface):
     attachment = NamedBlobFile(
-        title=_(u"Attachment"),
-        description=_(u""),
-        required=False,
+        title=_(u"Attachment"), description=_(u""), required=False
     )
 
 
+@interface.implementer(ICommentExtenderFields)
+@adapter(Comment)
 class CommentExtenderFields(Persistent):
-    interface.implements(ICommentExtenderFields)
-    adapts(Comment)
     attachment = u""
 
 
 CommentExtenderFactory = factory(CommentExtenderFields)
 
 
+@adapter(Interface, IDefaultBrowserLayer, CommentForm)
 class CommentExtender(extensible.FormExtender):
-    adapts(Interface, IDefaultBrowserLayer, CommentForm)
 
     fields = Fields(ICommentExtenderFields)
 
@@ -48,7 +45,7 @@ class CommentExtender(extensible.FormExtender):
 
     def update(self):
         self.add(ICommentExtenderFields, prefix="")
-        self.move('attachment', after='text', prefix="")
+        self.move("attachment", after="text", prefix="")
 
 
 # Patch Comment security to allow access for audio attachment
